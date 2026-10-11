@@ -1,4 +1,3 @@
-// THEME: one attribute changes all colours defined in styles.css.
 const themeToggle = document.getElementById('theme-toggle');
 const themeLabel = document.getElementById('theme-label');
 const themeIcon = document.getElementById('theme-icon');
@@ -12,7 +11,6 @@ function applyTheme(theme) {
   themeToggle.setAttribute('aria-pressed', String(isLight));
 }
 
-// The page still works when the browser blocks localStorage.
 let savedTheme = 'dark';
 try {
   const stored = localStorage.getItem('portfolio-theme');
@@ -28,11 +26,11 @@ themeToggle.addEventListener('click', () => {
   try {
     localStorage.setItem('portfolio-theme', nextTheme);
   } catch {
-    // The toggle does not depend on saving the preference.
+   
   }
 });
 
-// FORM: novalidate in the HTML lets our own handler show specific errors.
+
 const form = document.getElementById('contact-form');
 const formStatus = document.getElementById('form-status');
 const fields = ['name', 'email', 'message'];

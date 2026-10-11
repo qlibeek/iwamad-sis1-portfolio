@@ -27,7 +27,7 @@
   --type-body: 1rem;
   --type-card: 1.25rem;
   --type-section: 2.5rem;
-  --type-hero: 4.5rem;
+  --type-hero: clamp(2.5rem, 5.5vw, 4.5rem);
 }
 :root[data-theme="light"] {
   color-scheme: light;
@@ -115,6 +115,7 @@ h2 { font-size: var(--type-section); letter-spacing: -.04em; margin-top: var(--s
 h3 { font-size: var(--type-card); margin: var(--space-2) 0; letter-spacing: -.025em; }
 .project-content > p:not(.project-meta) { color: var(--muted); font-size: var(--type-sm); margin-bottom: var(--space-3); }
 .project-link { display: flex; align-items: center; justify-content: space-between; gap: var(--space-1); border-top: 1px solid var(--border); padding-top: var(--space-2); margin-top: auto; font-size: var(--type-sm); font-weight: 600; }
+.live-project { margin-top: var(--space-1); color: var(--accent); }
 .contact-section { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-8); padding: var(--space-6); background: radial-gradient(ellipse at 0 100%, var(--glow), transparent 70%), var(--surface); }
 .contact-copy { min-width: 0; }
 .contact-copy > p:not(.eyebrow) { margin: var(--space-3) 0; max-width: 34ch; color: var(--muted); }

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Alibek Burakhanov's student portfolio: web development projects, skills and contact information.">
+  <meta name="color-scheme" content="dark light">
+  <title>Alibek Burakhanov | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="wordmark" href="#about" aria-label="Alibek Burakhanov, back to About Me">AB<span>.</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light mode" aria-pressed="false">
+        <span id="theme-icon" aria-hidden="true">☀</span>
+        <span id="theme-label">Light mode</span>
+      </button>
+    </header>
+
+    <main id="main">
+      <section class="hero panel" id="about" aria-labelledby="about-heading">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Learning. Building. Improving.</p>
+          <p class="role">ITM Student &amp; Aspiring Web Developer</p>
+          <h1 id="about-heading">Alibek<br><span>Burakhanov.</span></h1>
+          <p class="intro">I’m learning to turn ideas into clear, useful websites. This portfolio brings together my first steps in HTML, CSS and JavaScript.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">Explore my projects <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
+          </div>
+          <ul class="skill-list" aria-label="Skills I am developing">
+            <li>HTML5</li><li>CSS3</li><li>JavaScript</li>
+          </ul>
+        </div>
+        <figure class="portrait">
+          <img src="assets/profile.jpg" alt="Alibek Burakhanov wearing a white shirt" width="960" height="1280" fetchpriority="high">
+          <figcaption><span>ABOUT ME</span><p>A student with a curiosity<br>for the web.</p></figcaption>
+        </figure>
+      </section>
+
+      <section class="projects-section" id="projects" aria-labelledby="projects-heading">
+        <div class="section-heading">
+          <div><p class="eyebrow">01 / SELECTED WORK</p><h2 id="projects-heading">Small projects.<br>Real progress.</h2></div>
+          <p>Three builds from my IWAMAD practice.<br>Each one helped me learn something new.</p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card panel">
+            <div class="project-preview preview-profile" aria-hidden="true">
+              <span class="preview-number">01</span>
+              <div class="mini-profile"><span class="mini-avatar">AB</span><span class="mini-name">Alibek Burakhanov</span><span class="mini-caption">Aspiring Web Developer</span><div class="mini-tags"><span>HTML</span><span>CSS</span></div></div>
+            </div>
+            <div class="project-content">
+              <p class="project-meta">WEEK 02 / HTML + CSS</p>
+              <h3>Responsive profile card</h3>
+              <p>A personal profile with a photo, short biography and links. I used responsive CSS to adapt the card to different screen sizes.</p>
+              <a class="project-link" href="https://github.com/qlibeek/iwamad-practice/tree/week-02" target="_blank" rel="noopener noreferrer">View Week 02 source <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+            </div>
+          </article>
+          <article class="project-card panel">
+            <div class="project-preview preview-components" aria-hidden="true">
+              <span class="preview-number">02</span>
+              <div class="mini-code"><span>&lt;ProfileCard /&gt;</span><span>&lt;SkillItem /&gt;</span><span>&lt;LikeButton /&gt;</span></div>
+            </div>
+            <div class="project-content">
+              <p class="project-meta">WEEK 03 / REACT + TYPESCRIPT</p>
+              <h3>Component-based profile</h3>
+              <p>A React version of my profile. I split the interface into reusable components and used TypeScript to describe their data.</p>
+              <a class="project-link" href="https://github.com/qlibeek/iwamad-practice/tree/week-03" target="_blank" rel="noopener noreferrer">View Week 03 source <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+            </div>
+          </article>
+          <article class="project-card panel">
+            <div class="project-preview preview-routing" aria-hidden="true">
+              <span class="preview-number">03</span>
+              <div class="mini-browser"><div class="browser-dots"><i></i><i></i><i></i></div><div class="mini-nav"><span>Home</span><span>Skills</span><span>Contact</span></div><div class="mini-route">/skills</div><span class="mini-caption">One app. Connected pages.</span></div>
+            </div>
+            <div class="project-content">
+              <p class="project-meta">WEEK 04 / ROUTING + STATE</p>
+              <h3>Multi-page profile app</h3>
+              <p>A profile app with Home, Skills and Contact routes. I added shared like state and a test for the Like button.</p>
+              <a class="project-link" href="https://github.com/qlibeek/iwamad-practice/tree/week-04" target="_blank" rel="noopener noreferrer">View Week 04 source <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-section panel" id="contact" aria-labelledby="contact-heading">
+        <div class="contact-copy">
+          <p class="eyebrow">02 / CONTACT</p>
+          <h2 id="contact-heading">Let’s start<br>a conversation.</h2>
+          <p>Have feedback on my work or an idea to share? I’d be happy to hear from you.</p>
+          <a class="contact-email" href="mailto:burakhanovalibek@gmail.com">burakhanovalibek@gmail.com <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="https://github.com/qlibeek" target="_blank" rel="noopener noreferrer">Find me on GitHub <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+        </div>
+        <form id="contact-form" novalidate>
+          <p class="form-note">This is a demo form. Messages are validated here and are not sent.</p>
+          <div class="form-field"><label for="name">Name <span>(required)</span></label><input id="name" name="name" type="text" autocomplete="name" required aria-describedby="name-error"><p class="field-error" id="name-error" aria-live="polite"></p></div>
+          <div class="form-field"><label for="email">Email <span>(required)</span></label><input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-error"><p class="field-error" id="email-error" aria-live="polite"></p></div>
+          <div class="form-field"><label for="message">Message <span>(required)</span></label><textarea id="message" name="message" rows="4" required aria-describedby="message-error"></textarea><p class="field-error" id="message-error" aria-live="polite"></p></div>
+          <button class="button button-primary submit-button" type="submit">Submit message <span aria-hidden="true">↗</span></button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+    <footer class="site-footer"><p>© 2026 Alibek Burakhanov</p><p>Built with HTML, CSS &amp; JavaScript.</p><a href="#about">Back to top <span aria-hidden="true">↑</span></a></footer>
+  </div>
+</body>
+</html>
